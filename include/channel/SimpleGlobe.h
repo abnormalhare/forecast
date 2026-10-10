@@ -6,51 +6,8 @@
 #include <types.h>
 #include <nw4r/g3d/g3d_camera.h>
 #include <revolution/MTX.h>
-
-// Globe view state (d_weather_around)
-class GlobeView {
-public:
-    GlobeView(nw4r::g3d::Camera camera);
-    virtual ~GlobeView();
-
-    void unk10(Vec *);
-
-    nw4r::g3d::Camera *getCamera() { return &mCamera; }
-    f32 getFOVy() { return mFOVy; }
-    f32 getAspect() { return mAspect; }
-    f32 getNear() { return mNear; }
-    f32 getFar() { return mFar; }
-    Vec *getPosition() { return &mPosition; }
-    Vec *getOrientation() { return &mOrientation; }
-    u8 getResetting() { return mResetting; }
-
-    void setZoom(f32 zoom) { mZoom = zoom; }
-
-private:
-    nw4r::g3d::Camera mCamera; // at 0x4
-    u8 unk8[0x90 - 0x8];       // at 0x8
-    Vec mPosition;             // at 0x90
-    Vec mOrientation;          // at 0x9C
-    u8 unkA8[0xC0 - 0xA8];     // at 0xA8
-    u8 mResetting;             // at 0xC0
-    u8 unkC1[0xC4 - 0xC1];     // at 0xC1
-    f32 mFOVy;                 // at 0xC4
-    f32 mAspect;               // at 0xC8
-    f32 mNear;                 // at 0xCC
-    f32 mFar;                  // at 0xD0
-    f32 mZoom;                 // at 0xD4
-    u8 unkD8[0xEC - 0xD8];     // at 0xD8
-};
-
-// Hack
-class Vector3 : public Vec {
-public:
-    Vector3(f32 x, f32 y, f32 z) {
-        this->x = x;
-        this->y = y;
-        this->z = z;
-    }
-};
+#include "GlobeView.h"
+#include "nw4r/math/math_types.h"
 
 // d_scene's m_pSimpleGlobe (size 0xD0)
 class SimpleGlobe {
@@ -79,6 +36,7 @@ public:
     void UpdateRotation(u32 stop);
     void SetZoomLevel(s32 level);
     void PlayRotateSound(u32 id);
+    void unk();
 
     GlobeView* GetView() {
         return mView;
@@ -86,10 +44,8 @@ public:
 
     nw4r::g3d::ScnRoot* mScnRoot; // at 0x0
     GlobeView* mView;             // at 0x4
-    Vector3 mRotation;            // at 0x8
-    f32 unk14;                    // at 0x14
-    f32 unk18;                    // at 0x18
-    f32 unk1C;                    // at 0x1C
+    nw4r::math::VEC3 mRotation;   // at 0x8
+    nw4r::math::VEC3 unk14;       // at 0x14
     f32 unk20;                    // at 0x20
     f32 unk24;                    // at 0x24
     f32 unk28;                    // at 0x28

@@ -13,7 +13,8 @@ struct Rect {
         right = 0.0f;
         bottom = 0.0f;
     }
-    ~Rect();
+    Rect(f32 left, f32 top, f32 right, f32 bottom)
+        : left(left), top(top), right(right), bottom(bottom) {}
 
     f32 left;   // at 0x0
     f32 top;    // at 0x4

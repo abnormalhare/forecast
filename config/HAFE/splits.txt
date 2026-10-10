@@ -164,6 +164,9 @@ WeatherSetting.cpp:
 ForecastSummary.cpp:
 	.text       start:0x800289AC end:0x80028AA0
 
+TextTagProcessor.cpp:
+	.text       start:0x80029004 end:0x8002AF90
+
 LayoutObj.cpp:
 	.text       start:0x8002AF90 end:0x8002B734
 
@@ -217,6 +220,16 @@ System.cpp:
 	.sbss       start:0x80330AD0 end:0x80330B78
 	.sdata2     start:0x80331F00 end:0x80331F78
 
+WiiConnect24.cpp:
+	.text       start:0x80032610 end:0x80034564
+
+DragScroll.cpp:
+	.text       start:0x80035BA8 end:0x80035DC4
+
+LayoutButton.cpp:
+	.text       start:0x80037184 end:0x80039994
+	.ctors      start:0x80179284 end:0x80179288
+
 ButtonGroup.cpp:
 	.text       start:0x80039994 end:0x8003A4A8
 	.sdata      start:0x803301B8 end:0x803301BC
@@ -251,10 +264,12 @@ SceneBase.cpp:
 	.sdata2     start:0x80332040 end:0x80332098
 
 SimpleGlobe.cpp:
-	.text       start:0x8003F628 end:0x800411B4
+	.text       start:0x8003F628 end:0x80041704
+	.ctors      start:0x80179290 end:0x80179294
 	.rodata     start:0x8018F730 end:0x8018F7B0
 	.sdata      start:0x803301E0 end:0x803301F0
-	.sdata2     start:0x80332098 end:0x803320A8
+	.sbss       start:0x80330C30 end:0x80330C38
+	.sdata2     start:0x80332098 end:0x803320B0
 
 revolution/CNT/cnt.c:
 	.text       start:0x80045ABC end:0x80045FD4

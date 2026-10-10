@@ -124,6 +124,11 @@ public:
         return mpSetting != NULL && mpLightSetData != NULL;
     }
 
+    LightSetting *getSetting() {
+        return mpSetting;
+    }
+
+    LightObj *GetLightObj(u32 lightIdx);
     bool SelectLightObj(u32 lightIdx, int lightObjIdx);
     bool SelectAmbLightObj(int lightObjIdx);
 
@@ -171,6 +176,10 @@ public:
         }
 
         return LightSet(this, NULL);
+    }
+
+    LightObj *GetLightObj(int idx) {
+        return &mpLightObjArray[idx];
     }
 
 private:
