@@ -1039,6 +1039,7 @@ config.libs = [
                 Object(Matching, "ButtonGroup.cpp"),
                 Object(Matching, "PointerHistory.cpp"),
                 Object(Matching, "Fade.cpp"),
+                Object(NonMatching, "vcmv/vcmv_www.cpp", extra_cflags=["-inline auto", "-str pool"]),
                 Object(Matching, "WorkerThread.cpp"),
                 Object(Matching, "LoopSound.cpp"),
                 Object(Matching, "LayoutObj.cpp", extra_cflags=["-ipa file"]),

@@ -416,6 +416,17 @@ revolution/NWC24/NWC24Ipc.c:
 	.text       start:0x8006DC10 end:0x8006DD84
 	.sbss       start:0x80330D40 end:0x80330D44
 
+vcmv/vcmv_www.cpp:
+	extab       start:0x80006648 end:0x80006698
+	extabindex  start:0x80006B5C end:0x80006BD4
+	.text       start:0x80083D08 end:0x80084B70
+	.rodata     start:0x80194278 end:0x80194C40
+	.data       start:0x801B56E0 end:0x801B6970
+	.bss        start:0x8028B980 end:0x8028BA78
+	.sdata      start:0x803303F8 end:0x80330408
+	.sbss       start:0x80330ED0 end:0x803310A0
+	.sdata2     start:0x803322C8 end:0x803322E0
+
 nw4r/ef/ef_draworder.cpp:
 	.text       start:0x80084C10 end:0x80084D10
 

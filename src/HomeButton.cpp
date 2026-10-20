@@ -16,8 +16,6 @@
 #define HOME_BUTTON_SOUND_BUFFER_SIZE 0x1D000
 #define HOME_BUTTON_WORK_BUFFER_SIZE 0x80000
 
-// Not yet decompiled (channel)
-
 // Not yet decompiled (libraries)
 extern "C" void HBMCreate(HomeButtonInfo* info);
 extern "C" void HBMDelete(void);
