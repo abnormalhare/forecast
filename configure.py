@@ -326,6 +326,15 @@ cflags_msl = [
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
 ]
+cflags_vcmv = [
+    "-i include/nw4r_compat",
+    *cflags_base,
+    "-enc SJIS",
+    "-inline auto",
+    "-str reuse,pool,readonly",
+    "-fp_contract off",
+    "-i include/vcmv",
+]
 
 # REL flags
 cflags_rel = [
@@ -1059,7 +1068,6 @@ config.libs = [
                 Object(Matching, "ButtonGroup.cpp"),
                 Object(Matching, "PointerHistory.cpp"),
                 Object(Matching, "Fade.cpp"),
-                Object(NonMatching, "vcmv/vcmv_www.cpp", extra_cflags=["-inline auto", "-str pool"]),
                 Object(Matching, "WorkerThread.cpp"),
                 Object(Matching, "LoopSound.cpp"),
                 Object(Matching, "LayoutObj.cpp", extra_cflags=["-ipa file"]),
@@ -1068,6 +1076,15 @@ config.libs = [
                 Object(Matching, "SimpleGlobe.cpp", extra_cflags=["-ipa file"]),
             ],
     },
+    {
+        "lib": "vcmv",
+        "mw_version": "GC/3.0a5.2",
+        "cflags": cflags_vcmv,
+        "progress_category": "vcmv",
+        "objects": [
+            Object(NonMatching, "vcmv/vcmv_www.cpp")
+        ],
+    }
 ]
 
 
@@ -1097,6 +1114,7 @@ config.progress_categories = [
     ProgressCategory("metrotrk", "MetroTRK"),
     ProgressCategory("mslc", "MSL_C"),
     ProgressCategory("nw4r", "NW4R"),
+    ProgressCategory("vcmv", "VCMV")
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`

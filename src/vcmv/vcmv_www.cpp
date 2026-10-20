@@ -5,7 +5,6 @@
 #include "revolution/NAND/NANDOpenClose.h"
 #include <cstring>
 #include "revolution/CNT/cnt.h"
-#include "revolution/MEM.h"
 #include "revolution/SC/scapi.h"
 #include "revolution/VI/vi.h"
 #include "types.h"
@@ -175,6 +174,7 @@ s32 wwwWriteNandFile(WWWNandFile* file) {
     return ret;
 }
 
+#pragma opt_common_subs on
 void wwwSaveSettings(void) {
     wwwSettingsBuf.magic = 0x35465768;
     wwwSettingsBuf.magic2 = 0x35465768;
@@ -439,7 +439,7 @@ s32 wwwLoadFonts(void) {
     return count == 0 ? -0xE15 : 0;
 }
 
-#pragma global_optimizer off
+#pragma opt_common_subs off
 static inline BOOL wwwSyncFiles(void) {
     WWWNandFile* file;
 
@@ -475,7 +475,7 @@ s32 wwwInitialize(void) {
     return fonts;
 }
 
-#pragma global_optimizer reset
+#pragma opt_common_subs on
 #pragma opt_unroll_loops off
 void wwwShutdown(void) {
     WWWFont* font;
