@@ -563,7 +563,7 @@ config.libs = [
             # GX
             Object(Matching, "revolution/GX/GXAttr.c"),
             Object(Matching, "revolution/GX/GXBump.c"),
-            Object(NonMatching, "revolution/GX/GXDisplayList.c"),
+            Object(Matching, "revolution/GX/GXDisplayList.c"),
             Object(NonMatching, "revolution/GX/GXDraw.c"),
             Object(NonMatching, "revolution/GX/GXFifo.c"),
             Object(NonMatching, "revolution/GX/GXFrameBuf.c"),
