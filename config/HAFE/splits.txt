@@ -472,15 +472,60 @@ revolution/NWC24/NWC24FileApi.c:
 	.sdata      start:0x80330278 end:0x80330290
 	.sbss       start:0x80330CE0 end:0x80330CEC
 
+revolution/NWC24/NWC24Config.c:
+	.text       start:0x8006A4D8 end:0x8006AB14
+	.data       start:0x801B4354 end:0x801B4370
+	.sdata      start:0x80330290 end:0x803302A0
+	.sbss       start:0x80330CF0 end:0x80330CF8
+
 revolution/NWC24/NWC24Manage.c:
 	.text       start:0x8006AB14 end:0x8006B4C0
 	.data       start:0x801B4370 end:0x801B4480
 	.sdata      start:0x803302A0 end:0x803302A4
 	.sbss       start:0x80330CF8 end:0x80330D0C
 
+revolution/NWC24/NWC24MBoxCtrl.c:
+	.text       start:0x8006B4C0 end:0x8006C354
+	.data       start:0x801B4480 end:0x801B4528
+	.sdata      start:0x803302A8 end:0x803302B4
+	.sbss       start:0x80330D10 end:0x80330D18
+
+revolution/NWC24/NWC24Schedule.c:
+	.text       start:0x8006C354 end:0x8006CF58
+	.data       start:0x801B4528 end:0x801B45A0
+	.bss        start:0x80288A20 end:0x80288BA0
+	.sdata      start:0x803302B8 end:0x803302C0
+	.sbss       start:0x80330D18 end:0x80330D28
+
+revolution/NWC24/NWC24DateParser.c:
+	.text       start:0x8006CF58 end:0x8006D548
+	.rodata     start:0x80193DA0 end:0x80193DC8
+
+revolution/NWC24/NWC24FriendList.c:
+	.text       start:0x8006D548 end:0x8006D780
+	.sdata      start:0x803302C0 end:0x803302D0
+
+revolution/NWC24/NWC24Time.c:
+	.text       start:0x8006D780 end:0x8006DC10
+	.data       start:0x801B45E0 end:0x801B4620
+	.bss        start:0x80288BA0 end:0x80288C80
+	.sbss       start:0x80330D28 end:0x80330D40
+
 revolution/NWC24/NWC24Ipc.c:
 	.text       start:0x8006DC10 end:0x8006DD84
 	.sbss       start:0x80330D40 end:0x80330D44
+
+revolution/NWC24/NWC24Download.c:
+	.text       start:0x8006DD84 end:0x80071620
+	.data       start:0x801B463C end:0x801B46C0
+	.bss        start:0x80288C80 end:0x80288D60
+	.sdata      start:0x803302D0 end:0x803302F8
+	.sbss       start:0x80330D48 end:0x80330D60
+
+revolution/ARC/arc.c:
+	.text       start:0x80071620 end:0x80071FD8
+	.data       start:0x801B46C0 end:0x801B4730
+	.sdata      start:0x803302F8 end:0x80330308
 
 vcmv/vcmv_www.cpp:
 	extab       start:0x80006648 end:0x80006698
