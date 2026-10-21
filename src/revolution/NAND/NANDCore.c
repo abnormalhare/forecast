@@ -1,10 +1,10 @@
-#include <revolution/ESP.h>
+#include <revolution/ESP/esp.h>
 #include <revolution/NAND.h>
 #include <revolution/OS.h>
 
 #include <cstdio>
 #include <cstring>
-#include <wchar.h>
+#include <wchar_t.h>
 
 #define NAND_BANNER_MAGIC 'WIBN'
 
