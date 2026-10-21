@@ -1768,6 +1768,12 @@ revolution/IPC/ipcMain.c:
 	.text       start:0x801188A4 end:0x80118970
 	.sbss       start:0x80331768 end:0x8033177C
 
+revolution/IPC/ipcclt.c:
+	.text       start:0x80118970 end:0x8011A2E0
+	.bss        start:0x802F1240 end:0x802F12E0
+	.sdata      start:0x803307E8 end:0x803307F0
+	.sbss       start:0x80331780 end:0x80331790
+
 revolution/IPC/memory.c:
 	.text       start:0x8011A2E0 end:0x8011A804
 	.bss        start:0x802F12E0 end:0x802F1360
@@ -1776,6 +1782,11 @@ revolution/IPC/ipcProfile.c:
 	.text       start:0x8011A804 end:0x8011A9C8
 	.bss        start:0x802F1360 end:0x802F1460
 	.sbss       start:0x80331790 end:0x80331798
+
+revolution/FS/fs.c:
+	.text       start:0x8011A9C8 end:0x8011BF9C
+	.sdata      start:0x803307F0 end:0x803307F8
+	.sbss       start:0x80331798 end:0x803317B0
 
 revolution/PAD/Pad.c:
 	.text       start:0x8011BF9C end:0x8011BFF8
