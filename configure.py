@@ -529,6 +529,9 @@ config.libs = [
             # CNT
             Object(Matching, "revolution/CNT/cnt.c"),
 
+            # CX
+            Object(NonMatching, "revolution/CX/CXUncomp.c"),
+
             # DB
             Object(Matching, "revolution/DB/db.c"),
 
@@ -646,8 +649,10 @@ config.libs = [
             Object(Matching, "revolution/OS/OSMemory.c"),
             Object(NonMatching, "revolution/OS/OSMessage.c"),
             Object(Matching, "revolution/OS/OSMutex.c"),
+            Object(NonMatching, "revolution/OS/OSNandboot.c"),
             Object(NonMatching, "revolution/OS/OSNet.c"),
             Object(Matching, "revolution/OS/OSPlayRecord.c"),
+            Object(NonMatching, "revolution/OS/OSPlayTime.c"),
             Object(NonMatching, "revolution/OS/OSReset.c"),
             Object(Matching, "revolution/OS/OSRtc.c"),
             Object(Matching, "revolution/OS/OSStateFlags.c"),

@@ -1256,6 +1256,11 @@ revolution/OS/OS.c:
 	.sdata      start:0x803304E8 end:0x8033050C
 	.sbss       start:0x803311F8 end:0x80331240
 
+revolution/OS/OSAlarm.c:
+	.text       start:0x800E4830 end:0x800E5014
+	.data       start:0x801B9350 end:0x801B9360
+	.sbss       start:0x80331240 end:0x80331248
+
 revolution/OS/OSAlloc.c:
 	.text       start:0x800E5014 end:0x800E531C
 	.sdata      start:0x80330510 end:0x80330514
@@ -1284,16 +1289,34 @@ revolution/OS/OSError.c:
 	.bss        start:0x802CB470 end:0x802CB4B4
 	.sdata      start:0x80330520 end:0x80330528
 
+revolution/OS/OSExec.c:
+	.text       start:0x800E6E8C end:0x800E905C
+	.data       start:0x801B9B18 end:0x801B9E68
+	.bss        start:0x802CB4C0 end:0x802CB4E0
+	.sdata      start:0x80330528 end:0x80330538
+	.sbss       start:0x80331260 end:0x80331278
+	.sdata2     start:0x80332D98 end:0x80332DA0
+
 revolution/OS/OSFatal.c:
 	.text       start:0x800E905C end:0x800E9C80
 	.bss        start:0x802CB4E0 end:0x802CB7B4
 	.sdata      start:0x80330538 end:0x8033053C
 	.sdata2     start:0x80332DA0 end:0x80332DE0
 
+revolution/OS/OSFont.c:
+	.text       start:0x800E9C80 end:0x800EA948
+	.data       start:0x801B9E68 end:0x801BA978
+	.sdata      start:0x80330540 end:0x80330548
+	.sbss       start:0x80331278 end:0x80331288
+	.sdata2     start:0x80332DE0 end:0x80332DE8
+
 revolution/OS/OSInterrupt.c:
 	.text       start:0x800EA948 end:0x800EB0CC
 	.data       start:0x801BA978 end:0x801BA9A8
 	.sbss       start:0x80331288 end:0x8033129C
+
+revolution/OS/OSMessage.c:
+	.text       start:0x800EB0CC end:0x800EB2E8
 
 revolution/OS/OSMemory.c:
 	.text       start:0x800EB2E8 end:0x800EBAFC
@@ -1301,6 +1324,12 @@ revolution/OS/OSMemory.c:
 
 revolution/OS/OSMutex.c:
 	.text       start:0x800EBAFC end:0x800EBE00
+
+revolution/OS/OSReset.c:
+	.text       start:0x800EBE00 end:0x800EC6E4
+	.data       start:0x801BA9B8 end:0x801BAC40
+	.sdata      start:0x80330548 end:0x80330550
+	.sbss       start:0x803312A0 end:0x803312B8
 
 revolution/OS/OSRtc.c:
 	.text       start:0x800EC6E4 end:0x800ED170
@@ -1350,9 +1379,29 @@ revolution/OS/OSStateFlags.c:
 	.data       start:0x801C6BF0 end:0x801C6C18
 	.bss        start:0x802CC4E0 end:0x802CC500
 
+revolution/OS/OSNet.c:
+	.text       start:0x800F0150 end:0x800F0204
+
+revolution/OS/OSNandboot.c:
+	.text       start:0x800F0204 end:0x800F040C
+	.data       start:0x801C6D80 end:0x801C6D9A
+
+revolution/OS/OSPlayTime.c:
+	.text       start:0x800F040C end:0x800F0CA4
+	.data       start:0x801C6DA0 end:0x801C6DB4
+	.bss        start:0x802CC500 end:0x802CC530
+	.sbss       start:0x80331318 end:0x80331330
+	.sdata2     start:0x80332DE8 end:0x80332DF8
+
 revolution/OS/__ppc_eabi_init.c:
 	.init       start:0x800042E0 end:0x80004338
 	.text       start:0x800F0CA4 end:0x800F0D58
+
+revolution/EXI/EXIBios.c:
+	.text       start:0x800F0D58 end:0x800F25EC
+	.bss        start:0x802CC530 end:0x802CC5F0
+	.sdata      start:0x80330570 end:0x80330574
+	.sbss       start:0x80331330 end:0x80331334
 
 revolution/EXI/EXIUart.c:
 	.text       start:0x800F25EC end:0x800F2920
@@ -1361,6 +1410,18 @@ revolution/EXI/EXIUart.c:
 revolution/EXI/EXICommon.c:
 	.text       start:0x800F2920 end:0x800F2AAC
 	.sdata2     start:0x80332DF8 end:0x80332E00
+
+revolution/SI/SIBios.c:
+	.text       start:0x800F2AAC end:0x800F3AB4
+	.data       start:0x801C6E70 end:0x801C6E98
+	.bss        start:0x802CC5F0 end:0x802CC810
+	.sdata      start:0x80330578 end:0x8033057C
+	.sbss       start:0x80331348 end:0x80331358
+
+revolution/SI/SISamplingRate.c:
+	.text       start:0x800F3AB4 end:0x800F3B94
+	.data       start:0x801C6E98 end:0x801C6EC8
+	.sbss       start:0x80331358 end:0x8033135C
 
 revolution/DB/db.c:
 	.text       start:0x800F3B94 end:0x800F3C7C
@@ -1528,6 +1589,12 @@ revolution/AXFX/AXFXHooks.c:
 revolution/MEM/mem_allocator.c:
 	.text       start:0x80110FCC end:0x80111050
 	.sdata2     start:0x80332FF8 end:0x80333008
+
+revolution/MEM/mem_list.c:
+	.text       start:0x80111050 end:0x80111164
+
+revolution/CX/CXUncomp.c:
+	.text       start:0x80111164 end:0x80111DE0
 
 revolution/DSP/dsp.c:
 	.text       start:0x80111DE0 end:0x8011201C
