@@ -407,14 +407,14 @@ config.libs = [
             # AX
             Object(NonMatching, "revolution/AX/AX.c"),
             Object(Matching, "revolution/AX/AXAlloc.c"),
-            Object(NonMatching, "revolution/AX/AXAux.c"),
+            Object(Matching, "revolution/AX/AXAux.c"),
             Object(Matching, "revolution/AX/AXCL.c"),
-            Object(NonMatching, "revolution/AX/AXComp.c"),
+            Object(Matching, "revolution/AX/AXComp.c"),
             Object(Matching, "revolution/AX/AXOut.c"),
             Object(Matching, "revolution/AX/AXProf.c"),
             Object(Matching, "revolution/AX/AXSPB.c"),
             Object(NonMatching, "revolution/AX/AXVPB.c"),
-            Object(NonMatching, "revolution/AX/DSPCode.c"),
+            Object(Matching, "revolution/AX/DSPCode.c"),
 
             # AXFX
             Object(Matching, "revolution/AXFX/AXFXHooks.c"),
@@ -546,7 +546,7 @@ config.libs = [
 
             # DSP
             Object(Matching, "revolution/DSP/dsp.c"),
-            Object(NonMatching, "revolution/DSP/dsp_debug.c"),
+            Object(Matching, "revolution/DSP/dsp_debug.c"),
             Object(Matching, "revolution/DSP/dsp_task.c"),
 
             # DVD
@@ -598,9 +598,9 @@ config.libs = [
             # MEM
             Object(Matching, "revolution/MEM/mem_allocator.c"),
             Object(NonMatching, "revolution/MEM/mem_expHeap.c"),
-            Object(NonMatching, "revolution/MEM/mem_frameHeap.c"),
+            Object(Matching, "revolution/MEM/mem_frameHeap.c"),
             Object(NonMatching, "revolution/MEM/mem_heapCommon.c"),
-            Object(NonMatching, "revolution/MEM/mem_list.c"),
+            Object(Matching, "revolution/MEM/mem_list.c"),
             Object(NonMatching, "revolution/MEM/mem_unitHeap.c"),
 
             # MTX
@@ -643,7 +643,7 @@ config.libs = [
             Object(Matching, "revolution/OS/__ppc_eabi_init.c"),
             Object(Matching, "revolution/OS/__start.c"),
             Object(Matching, "revolution/OS/OS.c"),
-            Object(NonMatching, "revolution/OS/OSAlarm.c"),
+            Object(Matching, "revolution/OS/OSAlarm.c"),
             Object(Matching, "revolution/OS/OSAlloc.c"),
             Object(Matching, "revolution/OS/OSArena.c"),
             Object(Matching, "revolution/OS/OSAudioSystem.c"),
@@ -711,7 +711,7 @@ config.libs = [
             Object(Matching, "revolution/VF/pf_fat12.c"),
             Object(Matching, "revolution/VF/pf_fat16.c"),
             Object(Matching, "revolution/VF/pf_fat32.c"),
-            Object(NonMatching, "revolution/VF/pf_fatfs.c"),
+            Object(Matching, "revolution/VF/pf_fatfs.c"),
             Object(Matching, "revolution/VF/pf_file.c"),
             Object(NonMatching, "revolution/VF/pf_path.c"),
             Object(Matching, "revolution/VF/pf_sector.c"),
@@ -719,22 +719,22 @@ config.libs = [
             Object(Matching, "revolution/VF/pf_cp932.c"),
             Object(Matching, "revolution/VF/pf_api_util.c"),
             Object(Matching, "revolution/VF/pf_attach.c"),
-            Object(NonMatching, "revolution/VF/pf_detach.c"),
-            Object(NonMatching, "revolution/VF/pf_errnum.c"),
-            Object(NonMatching, "revolution/VF/pf_fclose.c"),
-            Object(NonMatching, "revolution/VF/pf_finfo.c"),
+            Object(Matching, "revolution/VF/pf_detach.c"),
+            Object(Matching, "revolution/VF/pf_errnum.c"),
+            Object(Matching, "revolution/VF/pf_fclose.c"),
+            Object(Matching, "revolution/VF/pf_finfo.c"),
             Object(Matching, "revolution/VF/pf_fopen.c"),
             Object(NonMatching, "revolution/VF/pf_format.c"),
-            Object(NonMatching, "revolution/VF/pf_fread.c"),
-            Object(NonMatching, "revolution/VF/pf_fseek.c"),
+            Object(Matching, "revolution/VF/pf_fread.c"),
+            Object(Matching, "revolution/VF/pf_fseek.c"),
             Object(NonMatching, "revolution/VF/pf_fsfirst.c"),
             Object(NonMatching, "revolution/VF/pf_fsnext.c"),
-            Object(NonMatching, "revolution/VF/pf_fwrite.c"),
-            Object(NonMatching, "revolution/VF/pf_getdev.c"),
+            Object(Matching, "revolution/VF/pf_fwrite.c"),
+            Object(Matching, "revolution/VF/pf_getdev.c"),
             Object(Matching, "revolution/VF/pf_init_prfile2.c"),
             Object(NonMatching, "revolution/VF/pf_mkdir.c"),
-            Object(NonMatching, "revolution/VF/pf_remove.c"),
-            Object(NonMatching, "revolution/VF/pf_unmount.c"),
+            Object(Matching, "revolution/VF/pf_remove.c"),
+            Object(Matching, "revolution/VF/pf_unmount.c"),
             Object(Matching, "revolution/VF/pf_filelock.c"),
             Object(Matching, "revolution/VF/pf_system.c"),
             Object(Matching, "revolution/VF/d_vf.c"),
@@ -743,7 +743,7 @@ config.libs = [
             Object(NonMatching, "revolution/VF/d_time.c"),
             Object(NonMatching, "revolution/VF/d_common.c"),
             Object(Matching, "revolution/VF/nand_drv.c"),
-            Object(NonMatching, "revolution/VF/sd_drv.c"),
+            Object(Matching, "revolution/VF/sd_drv.c"),
 
             # VI
             Object(NonMatching, "revolution/VI/i2c.c"),
