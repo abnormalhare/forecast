@@ -405,9 +405,9 @@ config.libs = [
             Object(NonMatching, "revolution/ARC/arc.c"),
 
             # AX
-            Object(Matching, "revolution/AX/AX.c"),
+            Object(NonMatching, "revolution/AX/AX.c"),
             Object(Matching, "revolution/AX/AXAlloc.c"),
-            Object(Matching, "revolution/AX/AXAux.c"),
+            Object(NonMatching, "revolution/AX/AXAux.c"),
             Object(Matching, "revolution/AX/AXCL.c"),
             Object(NonMatching, "revolution/AX/AXComp.c"),
             Object(Matching, "revolution/AX/AXOut.c"),
