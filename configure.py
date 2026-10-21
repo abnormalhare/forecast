@@ -419,6 +419,7 @@ config.libs = [
             # AXFX
             Object(Matching, "revolution/AXFX/AXFXHooks.c"),
             Object(Matching, "revolution/AXFX/AXFXReverbHi.c"),
+            Object(NonMatching, "revolution/AXFX/AXFXReverbHiExp.c"),
 
             # BASE
             Object(Matching, "revolution/BASE/PPCArch.c"),
@@ -592,6 +593,7 @@ config.libs = [
             Object(NonMatching, "revolution/MEM/mem_frameHeap.c"),
             Object(NonMatching, "revolution/MEM/mem_heapCommon.c"),
             Object(NonMatching, "revolution/MEM/mem_list.c"),
+            Object(NonMatching, "revolution/MEM/mem_unitHeap.c"),
 
             # MTX
             Object(NonMatching, "revolution/MTX/mtx.c"),
