@@ -1739,6 +1739,15 @@ revolution/SC/scapi_prdinfo.c:
 	.data       start:0x801CD370 end:0x801CD3C8
 	.sdata      start:0x803307C8 end:0x803307D8
 
+revolution/WENC/wenc.c:
+	.text       start:0x80117BB4 end:0x80117E8C
+	.rodata     start:0x801974A8 end:0x801974E8
+	.sdata2     start:0x80333008 end:0x80333010
+
+revolution/ESP/esp.c:
+	.text       start:0x80117E8C end:0x801188A4
+	.sdata      start:0x803307D8 end:0x803307E8
+
 revolution/IPC/ipcMain.c:
 	.text       start:0x801188A4 end:0x80118970
 	.sbss       start:0x80331768 end:0x8033177C
