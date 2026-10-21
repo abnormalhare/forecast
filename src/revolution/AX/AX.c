@@ -1,3 +1,4 @@
+#include "revolution/AX/AXAlloc.h"
 #include <revolution/AX.h>
 #include <revolution/OS.h>
 
@@ -14,7 +15,7 @@ void AXInitEx(u32 mode) {
     if (!__init) {
         OSRegisterVersion(__AXVersion);
 
-        __AXAllocInit();
+        __AXInitVoiceStacks();
         __AXVPBInit();
         __AXSPBInit();
         __AXAuxInit();
