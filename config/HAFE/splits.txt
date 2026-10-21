@@ -1579,9 +1579,27 @@ revolution/GX/GXPerf.c:
 	.text       start:0x80101D7C end:0x801025B8
 	.data       start:0x801C81E0 end:0x801C82D0
 
+revolution/DVD/dvdfs.c:
+	.text       start:0x801025B8 end:0x80102E08
+	.data       start:0x801C82D0 end:0x801C8398
+	.sdata      start:0x80330628 end:0x80330638
+	.sbss       start:0x80331498 end:0x803314C0
+
+revolution/DVD/dvd.c:
+	.text       start:0x80102E08 end:0x80107E20
+	.data       start:0x801C83D0 end:0x801C87E0
+	.bss        start:0x802CD300 end:0x802D1FB0
+	.sdata      start:0x80330638 end:0x80330650
+	.sbss       start:0x803314C0 end:0x80331558
+
 revolution/DVD/dvdqueue.c:
 	.text       start:0x80107E20 end:0x80108078
 	.bss        start:0x802D1FB0 end:0x802D1FD0
+
+revolution/DVD/dvderror.c:
+	.text       start:0x80108078 end:0x8010897C
+	.data       start:0x801C87E0 end:0x801C8810
+	.sbss       start:0x80331558 end:0x80331560
 
 revolution/DVD/dvdidutils.c:
 	.text       start:0x8010897C end:0x80108A6C
@@ -1592,6 +1610,13 @@ revolution/DVD/dvdFatal.c:
 	.data       start:0x801C8810 end:0x801C8CC0
 	.sbss       start:0x80331568 end:0x80331570
 	.sdata2     start:0x80332F88 end:0x80332F90
+
+revolution/DVD/dvd_broadway.c:
+	.text       start:0x80108BA8 end:0x8010AE60
+	.data       start:0x801C8D20 end:0x801C9B80
+	.bss        start:0x802D1FD0 end:0x802D23E0
+	.sdata      start:0x80330650 end:0x80330660
+	.sbss       start:0x80331570 end:0x80331598
 
 revolution/AI/ai.c:
 	.text       start:0x8010AE60 end:0x8010B3C4
