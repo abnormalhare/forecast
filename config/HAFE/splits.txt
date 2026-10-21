@@ -1722,6 +1722,22 @@ revolution/DSP/dsp_task.c:
 	.data       start:0x801CCE80 end:0x801CCFC0
 	.sbss       start:0x80331720 end:0x80331738
 
+revolution/NAND/nand.c:
+	.text       start:0x80112900 end:0x80113A24
+
+revolution/NAND/NANDOpenClose.c:
+	.text       start:0x80113A24 end:0x80114498
+	.data       start:0x801CCFC0 end:0x801CD060
+	.sdata      start:0x80330688 end:0x8033069C
+	.sbss       start:0x80331738 end:0x80331740
+
+revolution/NAND/NANDCore.c:
+	.text       start:0x80114498 end:0x80115848
+	.data       start:0x801CD060 end:0x801CD198
+	.bss        start:0x802E7D20 end:0x802E8080
+	.sdata      start:0x8033069C end:0x803306C0
+	.sbss       start:0x80331740 end:0x80331750
+
 revolution/SC/scsystem.c:
 	.text       start:0x80115848 end:0x8011731C
 	.rodata     start:0x80197450 end:0x801974A8
