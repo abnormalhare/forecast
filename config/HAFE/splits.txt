@@ -222,6 +222,9 @@ GlobeDots.cpp:
 	.rodata     start:0x8017B4C8 end:0x8017B508
 	.sdata2     start:0x80331EC0 end:0x80331F00
 
+GlobeDotsTable.cpp:
+	.rodata     start:0x8017B508 end:0x8018F4D0
+
 System.cpp:
 	.text       start:0x8002F3D0 end:0x80032610
 	.data       start:0x8019BB38 end:0x8019BBA0
@@ -233,6 +236,13 @@ System.cpp:
 Tween.cpp:
 	.text       start:0x80036994 end:0x800369F4
 	.sdata2     start:0x80331FC0 end:0x80331FC8
+
+LayoutButton.cpp:
+	.text       start:0x800369F4 end:0x80039994
+	.ctors      start:0x80179284 end:0x80179288
+	.bss        start:0x801F6B58 end:0x801F6C58
+	.sdata      start:0x80330190 end:0x803301B8
+	.sdata2     start:0x80331FC8 end:0x80332000
 
 ButtonGroup.cpp:
 	.text       start:0x80039994 end:0x8003A4A8
@@ -276,6 +286,20 @@ SimpleGlobe.cpp:
 	.sdata      start:0x803301E0 end:0x803301E8
 	.sbss       start:0x80330C28 end:0x80330C34
 	.sdata2     start:0x80332098 end:0x80332130
+
+Sound.cpp:
+	.text       start:0x80041704 end:0x80041884
+	.ctors      start:0x80179294 end:0x80179298
+	.bss        start:0x801F76C4 end:0x801F76E8
+
+sound_manager.cpp:
+	.text       start:0x80041884 end:0x80044AAC
+	.ctors      start:0x80179298 end:0x8017929C
+	.data       start:0x8019C640 end:0x801B3C80
+	.bss        start:0x801F76E8 end:0x801F7740
+	.sdata      start:0x803301E8 end:0x803301F0
+	.sbss       start:0x80330C34 end:0x80330C88
+	.sdata2     start:0x80332130 end:0x80332150
 
 revolution/CNT/cnt.c:
 	.text       start:0x80045ABC end:0x80045FD4

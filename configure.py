@@ -1101,6 +1101,7 @@ config.libs = [
                 Object(Matching, "GlobeDots.cpp"),
                 Object(Matching, "System.cpp"),
                 Object(Matching, "Tween.cpp"),
+                Object(NonMatching, "LayoutButton.cpp"),
                 Object(Matching, "ButtonGroup.cpp"),
                 Object(Matching, "PointerHistory.cpp"),
                 Object(Matching, "Fade.cpp"),
@@ -1110,6 +1111,7 @@ config.libs = [
                 Object(Matching, "GlobeView.cpp"),
                 Object(Matching, "SceneBase.cpp", extra_cflags=["-ipa file"]),
                 Object(Matching, "SimpleGlobe.cpp", extra_cflags=["-ipa file"]),
+                Object(NonMatching, "GlobeDotsTable.cpp"),
             ],
     },
     {
