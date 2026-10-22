@@ -310,7 +310,7 @@ SimpleGlobe.cpp:
 Sound.cpp:
 	.text       start:0x80041704 end:0x80041884
 	.ctors      start:0x80179294 end:0x80179298
-	.bss        start:0x801F76C4 end:0x801F76E8
+	.bss        start:0x801F76C8 end:0x801F76E8
 
 SoundManager.cpp:
 	.text       start:0x80041884 end:0x80044AAC
