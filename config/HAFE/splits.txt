@@ -312,7 +312,7 @@ Sound.cpp:
 	.ctors      start:0x80179294 end:0x80179298
 	.bss        start:0x801F76C4 end:0x801F76E8
 
-sound_manager.cpp:
+SoundManager.cpp:
 	.text       start:0x80041884 end:0x80044AAC
 	.ctors      start:0x80179298 end:0x8017929C
 	.data       start:0x8019C640 end:0x801B3C80

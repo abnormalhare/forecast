@@ -825,6 +825,7 @@ config.libs = [
         "lib": "MSL_C",
         "mw_version": "GC/3.0a3",
         "cflags": [*cflags_msl, "-Cpp_exceptions off"],
+        "progress_category": "mslc",
         "objects": [
             Object(Matching, "MSL_C/MSL_Common_Embedded/Math/Double_precision/e_acos.c"),
             Object(Matching, "MSL_C/MSL_Common_Embedded/Math/Double_precision/e_asin.c"),
