@@ -1105,6 +1105,7 @@ config.libs = [
                 Object(Matching, "main.cpp"),
                 Object(Matching, "DrawUtil.cpp"),
                 Object(Matching, "GlobeDots.cpp"),
+                Object(NonMatching, "GlobeDotsTable.cpp"),
                 Object(Matching, "WiiConnect24.cpp"),
                 Object(Matching, "WeatherUtil.cpp"),
                 Object(Matching, "ChannelMathData.cpp"),
@@ -1123,7 +1124,7 @@ config.libs = [
                 Object(Matching, "SceneBase.cpp", extra_cflags=["-ipa file"]),
                 Object(Matching, "SimpleGlobe.cpp", extra_cflags=["-ipa file"]),
                 Object(NonMatching, "Sound.cpp"),
-                Object(NonMatching, "GlobeDotsTable.cpp"),
+                Object(NonMatching, "SoundManager.cpp"),
             ],
     },
     {
