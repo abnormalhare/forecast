@@ -13,7 +13,7 @@ SoundAllocFunc gAllocFunc = 0;                  // 0x3C
 SoundMemFunc gMemFunc = 0;                      // 0x40
 void *gMemSoundArchive = NULL;                  // 0x44
 nw4r::snd::SoundArchivePlayer *gArchivePlayer = NULL;  // 0x48
-u32 *gIDK = NULL;  // 0x4C, something that inherits SoundArchive...
+u32 *lbl_80330C4C = NULL;  // 0x4C, something that inherits SoundArchive...
 nw4r::snd::SoundHeap *gSoundHeap = NULL;        // 0x50
 nw4r::snd::FxReverbHi *gFxReverb = NULL;        // 0x6C
 
@@ -40,7 +40,7 @@ void fn_800418A8(u8 arg1, void* data, const char *arg3, void* heap, u32 arg5, vo
 
     gSoundHeap = new nw4r::snd::SoundHeap();
     gArchivePlayer = new nw4r::snd::SoundArchivePlayer();
-    gIDK = new u32(0);
+    lbl_80330C4C = new u32(0);
     gFxReverb = new nw4r::snd::FxReverbHi();
 
     if (!AICheckInit()) {
